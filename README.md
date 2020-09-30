@@ -161,7 +161,7 @@ Slack::assertSent(function (SlackMessage $message) {
 Slack::assertSentCount(3);
 ```
 
-- More test helper methods coming...
+- More test helper methods are coming...
 
 Since this package uses `illuminate/notifications` to send notifications
 you can mock the Notification service instead of the Slack one
