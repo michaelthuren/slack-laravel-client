@@ -1,0 +1,51 @@
+{
+    "name": "michaelthuren/slack-laravel-client",
+    "description": "Slack notification for Laravel as it should be.",
+    "keywords": [
+        "laravel",
+        "slack"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Thuren",
+            "email": "michael.thuren@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3",
+        "guzzlehttp/guzzle": "^6.3 || ^7.0",
+        "illuminate/notifications": "^5.8 || ^6.0 || ^7.0 || ^8.0",
+        "illuminate/support": "^5.8 || ^6.0 || ^7.0 || ^8.0",
+        "laravel/slack-notification-channel": "^2.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "*",
+        "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MichaelThuren\\SlackLaravelClient\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --colors=always"
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MichaelThuren\\SlackLaravelClient\\ServiceProvider"
+            ],
+            "aliases": {
+                "Slack": "MichaelThuren\\SlackLaravelClient\\Facades\\Slack"
+            }
+        }
+    }
+}
