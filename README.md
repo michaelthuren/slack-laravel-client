@@ -12,7 +12,7 @@ Based on <a href="https://github.com/illuminate/mail">illuminate/mail</a>
 
 ## Slack Laravel Client
 
-Supported Laravel versions 5.5 - 8+
+Supported Laravel versions 5.5 - 9+
 
 Based on [gpressutto5/laravel-slack](https://github.com/gpressutto5/laravel-slack)
 
