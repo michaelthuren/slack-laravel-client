@@ -4,22 +4,9 @@ namespace MichaelThuren\SlackLaravelClient\Facades;
 
 use Illuminate\Support\Facades\Facade;
 use MichaelThuren\SlackLaravelClient\Slack as Slacker;
-use MichaelThuren\SlackLaravelClient\Testing\SlackFake;
 
 class Slack extends Facade
 {
-    /**
-     * Replace the bound instance with a fake.
-     *
-     * @return SlackFake
-     */
-    public static function fake(): SlackFake
-    {
-        static::swap($fake = new SlackFake(config('laravel-slack')));
-
-        return $fake;
-    }
-
     /**
      * Get the registered name of the component.
      *
